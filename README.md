@@ -49,7 +49,7 @@ If you use a web framework, chances are that they provide a helper utility to au
 
     # MyApp.p6sgi
     use MyApp;
-    my $app = sub { MyApp->run_psgi(@_) };
+    my $app = sub { MyApp.run_psgi(@_) };
 
 It's important that the return value of ".p6sgi" file is the code reference. See "eg/" directory for more examples of ".p6sgi" files.
 
